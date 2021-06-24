@@ -18,9 +18,9 @@ namespace FirstProject.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public string Index()
         {
-            return View();
+            return "Sachin Kr. Vishwakarma";
         }
 
         public IActionResult Privacy()
