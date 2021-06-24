@@ -20,7 +20,10 @@ namespace FirstProject.Controllers
 
         public ViewResult Index()
         {
-            return View("MyIndex");
+            int hour = DateTime.Now.Hour;
+            string greetingVM = hour < 12 ? "Good Morning" : "Good Evening";
+
+            return View("MyIndex", greetingVM);
         }
 
         public IActionResult Privacy()
